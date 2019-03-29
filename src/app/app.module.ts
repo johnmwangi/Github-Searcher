@@ -3,10 +3,14 @@ import { NgModule } from '@angular/core';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
+import { SerchComponent } from './serch/serch.component';
+import { StrikethroughDirective } from './strikethrough.directive';
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    SerchComponent,
+    StrikethroughDirective
   ],
   imports: [
     BrowserModule,

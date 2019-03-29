@@ -1,27 +1,39 @@
-# GithubSearcher
+## Git-Searcher.
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 7.3.6.
+## By John Mwangi.
 
-## Development server
+## Application Release Date:
+29 March 2019.
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
+## Description:
 
-## Code scaffolding
+This is an app that allows users to search for other github users and also view their repos. Checkout:(link)
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+## Languages used:
+HTML
 
-## Build
+Angular
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory. Use the `--prod` flag for a production build.
+CSS - Cascading Style Sheet. Also included bootstrap a library to css.
 
-## Running unit tests
+Markdown Syntax.
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+## BDD:
+This app is therefore expected to work as follows:
+Behavior	Expectation
+landing page	Displays my github account
+Search button	Displays other users on github
+View repo button	Shows the users repo
+Installation requirements:
+Web browser
+Internet connection Offline copy available if you fork and save in your computer as a file
+Link to the app:
+Click the link to view this awesome website. https://rkatana.github.io/git-search/
 
-## Running end-to-end tests
+## Known Bugs:
+The app doesn't implement search service. The app only shows my repos Noticed any other bug? KIndly contact me on roduor41@gmail.com
 
-Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protractortest.org/).
+## Legal:
+This Application is licensed under the MIT licence. Get more info on my github account
 
-## Further help
-
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI README](https://github.com/angular/angular-cli/blob/master/README.md).
+Copyright © 2019.
