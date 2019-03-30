@@ -1,22 +1,28 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
+import { HttpClientModule } from '@angular/common/http';
+import { FormsModule } from '@angular/forms';
 
-import { AppRoutingModule } from './app-routing.module';
+
+import { ProfileService } from './profile.service';
 import { AppComponent } from './app.component';
-import { SerchComponent } from './serch/serch.component';
-import { StrikethroughDirective } from './strikethrough.directive';
+import { ProfileComponent } from './profile/profile.component';
+import { HighlightDirective } from './highlight.directive';
+import { KeysPipe } from './keys.pipe';
 
 @NgModule({
   declarations: [
     AppComponent,
-    SerchComponent,
-    StrikethroughDirective
+    ProfileComponent,
+    HighlightDirective,
+    KeysPipe
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    HttpClientModule,
+    FormsModule,
   ],
-  providers: [],
+  providers: [ProfileService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
