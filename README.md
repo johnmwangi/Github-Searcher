@@ -28,7 +28,7 @@ Installation requirements:
 Web browser
 Internet connection Offline copy available if you fork and save in your computer as a file
 Link to the app:
-Click the link to view this awesome website. https://rkatana.github.io/git-search/
+
 
 ## Known Bugs:
 The app doesn't implement search service. The app only shows my repos Noticed any other bug? KIndly contact me on roduor41@gmail.com
