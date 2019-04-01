@@ -7,12 +7,12 @@ import { NgProgressHttpModule } from "@ngx-progressbar/http";
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
-import { GithubComponent } from './github/github.component';
-import { SearchService } from "./git-search/search.service";
-import { UserWelcomeComponent } from './user-welcome/user-welcome.component';
+import { GithubComponent } from './git/git.component';
+import { SearchService } from "./search.service";
+import { UserWelcomeComponent } from './user-github/user-github.component';
 import { BgColorDirective } from './bg-color.directive';
 import { Error404Component } from './error404/error404.component';
-import { DateCountPipe } from './date-count.pipe';
+import { DateCountPipe } from './keys.pipe';
 
 
 @NgModule({
