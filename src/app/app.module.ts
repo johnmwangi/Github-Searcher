@@ -2,16 +2,16 @@ import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 import {HttpClientModule} from '@angular/common/http';
 import { FormsModule } from "@angular/forms";
-import { NgProgressModule } from "@ngx-progressbar/core";
-import { NgProgressHttpModule } from "@ngx-progressbar/http";
+//import { NgProgressModule } from "@ngx-progressbar/core";
+//import { NgProgressHttpModule } from "@ngx-progressbar/http";
 
-import { AppRoutingModule } from './app-routing.module';
+import { AppRoutingModule } from './routing.module';
 import { AppComponent } from './app.component';
 import { GithubComponent } from './git/git.component';
 import { SearchService } from "./search.service";
 import { UserWelcomeComponent } from './user-github/user-github.component';
 import { BgColorDirective } from './bg-color.directive';
-//import { Error404Component } from './error404/error404.component';
+import { SrchComponent } from './error404/error404.component';
 import { DateCountPipe } from './keys.pipe';
 import { SrchComponent } from './srch/srch.component';
 
@@ -22,7 +22,7 @@ import { SrchComponent } from './srch/srch.component';
     GitComponent,
     UserGithubComponent,
     BgColorDirective,
-    //Error404Component,
+    SrchComponent,
     KeysPipe,
     SrchComponent
   ],
