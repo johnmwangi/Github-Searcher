@@ -11,18 +11,20 @@ import { GithubComponent } from './git/git.component';
 import { SearchService } from "./search.service";
 import { UserWelcomeComponent } from './user-github/user-github.component';
 import { BgColorDirective } from './bg-color.directive';
-import { Error404Component } from './error404/error404.component';
+//import { Error404Component } from './error404/error404.component';
 import { DateCountPipe } from './keys.pipe';
+import { SrchComponent } from './srch/srch.component';
 
 
 @NgModule({
   declarations: [
     AppComponent,
-    GithubComponent,
-    UserWelcomeComponent,
+    GitComponent,
+    UserGithubComponent,
     BgColorDirective,
-    Error404Component,
-    DateCountPipe
+    //Error404Component,
+    KeysPipe,
+    SrchComponent
   ],
   imports: [
     BrowserModule,

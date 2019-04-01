@@ -2,13 +2,13 @@ import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { RouterModule ,Routes } from "@angular/router";
 
-import { GithubComponent } from "../github/github.component";
-import { UserWelcomeComponent } from "../user-welcome/user-welcome.component";
-import { Error404Component } from "../error404/error404.component";
+import { GithubComponent } from "../git/git.component";
+import { UserWelcomeComponent } from "../user-github/user-github.component";
+//import { Error404Component } from "../error404/error404.component";
 
 const routes:Routes=[
-  {path:"github",component:GithubComponent},
-  {path:"home",component:UserWelcomeComponent},
+  {path:"git",component:GitComponent},
+  {path:"home",component:UsergithubComponent},
   {path:"",redirectTo:"/home",pathMatch:"full"},
   {path:"**",component:Error404Component}
 ]
