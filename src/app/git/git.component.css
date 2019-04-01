@@ -1,0 +1,54 @@
+img{
+  height: 250px;
+  width: auto;
+}
+.mar{
+  margin: 5px;
+  height:auto;
+
+}
+.mar:hover{
+  background-color: #2142;
+  transition: 450ms;
+}
+.marg{
+  margin: 3px;
+  height: 200px;
+}
+a{
+  font-weight: 400;
+}
+a:hover{
+  text-decoration: underline;
+  color: #567;
+
+}
+.search1{
+  display: inline-flex;
+  flex: 1 1 300px;
+  position: relative;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  overflow: hidden;
+}
+.fa-searchengin{
+  padding: 0.7rem;
+}
+.search{
+  flex: 1;
+  border: 0;
+  padding: 0.5rem 0.5rem 0.5rem 0;
+}
+#btn{
+  background: #538AC5;
+ border: 0;
+ color: white;
+ padding: 0.5rem;
+ border-radius: 0;
+}
+.container-fluid{
+  background-color: #2442;
+}
+.card{
+  background-color: #2441;
+}
