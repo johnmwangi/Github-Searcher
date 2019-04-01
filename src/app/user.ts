@@ -1,10 +1,9 @@
 export class User {
-    name:string;
-    company:string;
-    location:string;
-    avatar_url:string;
-    login:string;
-    html_url:string;
-    bio:string;
-    public_repos:string;
+    constructor(
+      public login: string,
+      public avatar_url: string,
+      public email: string,
+      public public_repos: string,
+      public date:Date
+    ) { }
 }

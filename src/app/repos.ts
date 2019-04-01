@@ -1,11 +1,9 @@
-export class Repos {
-  id:string;
-  name:string;
-  html_url:string;
-  description:string;
-  labels_url:string;
-  language:string;
-  languages_url:string;
-  created_at:string
-
+export class User {
+    constructor(
+      public login: string,
+      public avatar_url: string,
+      public email: string,
+      public public_repos: string,
+      public date:Date
+    ) { }
 }
