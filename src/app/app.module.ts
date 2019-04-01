@@ -11,7 +11,7 @@ import { GithubComponent } from './git/git.component';
 import { SearchService } from "./search.service";
 import { UserWelcomeComponent } from './user-github/user-github.component';
 import { BgColorDirective } from './bg-color.directive';
-import { SrchComponent } from './error404/error404.component';
+import { SrchComponent } from './srch/srch.component';
 import { DateCountPipe } from './keys.pipe';
 import { SrchComponent } from './srch/srch.component';
 
