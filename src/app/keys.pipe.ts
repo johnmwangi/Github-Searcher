@@ -5,12 +5,20 @@ import { Pipe, PipeTransform } from '@angular/core';
 })
 export class KeysPipe implements PipeTransform {
 
-  public transform(value: any, args?: any): any {
-    let keys = [];
-    for(let key in value) {
-      keys.push({key:key, value:value[key]});
+  transform(value:any): any {
+    let today:Date=new Date();
+    let todayWithNotime:any=new Date(today.getFullYear(),today.getMonth(),today.getDate());
+    var dateDifference=Math.abs(value-todayWithNotime);
+    const daysInSeconds=86400;
+    var dateDifferentSeconds=dateDifference*0.001;
+    var dateCounter=dateDifferentSeconds/daysInSeconds;
+    if(dateCounter>=1 && value >todayWithNotime){
+      return 0;
     }
-    return keys;
+    else{
+      return dateCounter;
+    }
+
   }
 
 }
