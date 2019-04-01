@@ -1,21 +1,18 @@
 import { Component, OnInit } from '@angular/core';
 import { ApiService } from '../api.service';
-import { Router } from '@angular/router';
-
 
 @Component({
-  selector: 'app-search',
-  templateUrl: './search.component.html',
-  styleUrls: ['./search.component.css']
+  selector: 'app-repo',
+  templateUrl: './repo.component.html',
+  styleUrls: ['./repo.component.css']
 })
-export class MasterComponent implements OnInit {
+export class RepoComponent implements OnInit {
 
   users;
   repos;
   userName: string;
 
-  constructor(public apiservice: ApiService, private router: Router) {
-
+  constructor(public apiservice: ApiService) {
     this.apiservice.getUserDetails().subscribe(users => {
       this.users = users;
       console.log(this.users);

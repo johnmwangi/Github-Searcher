@@ -1,12 +1,8 @@
 /*You can add global styles to this file, and also import other style files */
 /* You can add global styles to this file, and also import other style files */
-body {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  overflow: hidden;
-  width: 100vw;
-  height: 100vh;
-  color: black;
-  background-color: green;
+
+@import '~bootstrap/dist/css/bootstrap.css';
+.body{
+    background-image: url('https://mdbootstrap.com/previews/docs/latest/html/intros/intro-register-classic-form.html');
+    background-size: contain;
 }
