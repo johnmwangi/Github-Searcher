@@ -1,0 +1,67 @@
+<div class="container-fluid">
+<div class="row">
+
+
+<div class="col-md-4">
+  <div class="card">
+    <div class="card-body">
+      <label for="">Search User</label>
+      <div class="search1">
+        <i class="fab fa-searchengin"></i>
+        <input (keyup)='getUsers($event)' class="form-control search" placeholder="Search ..." type="search" name="userName" [(ngModel)]="userName" value="">
+        <button id="btn"  (click)=getRepos() (click)=getUsers(user) class="btn btn-primary" type="button" name="button">Search</button>
+
+      </div>
+
+      <!-- <button  (click)=getUsers() class="btn btn-primary" type="button" name="button">Submit</button> -->
+
+    </div>
+    <div  class="">
+      <img src="{{user.avatar_url}}" title="{{user.name}}" alt="">
+      <h2>{{user.name}}</h2>
+      <p>{{user.login}}</p>
+      <p><i class="fab fa-megaport"></i>: {{user.company}}</p>
+      <p><i class="fas fa-globe-africa"></i>: {{user.location}}</p>
+      <p><i class="fas fa-biohazard"></i>{{user.bio}}</p>
+      <a href="{{user.html_url}}"><button class="btn btn-outline-info" type="button" name="button">View on  Github</button></a>
+    </div>
+
+
+  </div>
+</div>
+
+<div class="col-md-8">
+  <div *ngIf="loading" class="form-group progress">
+  </div>
+    <span>Repos:{{user.public_repos}}</span>
+    <hr class="bg-info">
+  <div class="row">
+
+
+    <div *ngFor='let repo of repos' class="col-md-6">
+      <div  class="card mar">
+        <div class="marg">
+          <div class="card-title">
+            <h5><a href="{{repo.html_url}}" >{{repo.name}}</a></h5>
+          </div>
+          <div class="card-body">
+            {{repo.description}} <br>
+            Date created: {{repo.created_at|date}}
+          </div>
+          <div class="">
+            <span><a href="{{repo.languages_url}}"></a> {{repo.language}}</span>
+          </div>
+        </div>
+
+
+      </div>
+    </div>
+    <div *ngIf='errorMessage' class="alert alert-warning">
+      <strong>Warning {{errorMessage}} please Try a valid userName</strong>
+    </div>
+
+  </div>
+
+</div>
+</div>
+</div>

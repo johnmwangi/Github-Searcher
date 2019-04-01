@@ -1,15 +1,7 @@
-import { TestBed, inject } from '@angular/core/testing';
+import { Repos } from './repos';
 
-import { UsersService } from './users.service';
-
-describe('UsersService', () => {
-  beforeEach(() => {
-    TestBed.configureTestingModule({
-      providers: [UsersService]
-    });
+describe('Repos', () => {
+  it('should create an instance', () => {
+    expect(new Repos()).toBeTruthy();
   });
-
-  it('should be created', inject([UsersService], (service: UsersService) => {
-    expect(service).toBeTruthy();
-  }));
 });

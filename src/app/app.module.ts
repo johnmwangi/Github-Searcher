@@ -1,36 +1,39 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
-import {HttpClient, HttpClientModule} from '@angular/common/http'
-import {FormsModule} from '@angular/forms'
-import { RouterModule,Routes } from "@angular/router";
-import { AppComponent } from './app.component';
-import { UserInterfaceComponent } from './user-interface/user-interface.component';
-import { UsersService } from './users.service';
-import { SearchComponent } from './search/search.component';
-//import { RepocardsComponent } from './repocards/repocards.component';
+import {HttpClientModule} from '@angular/common/http';
+import { FormsModule } from "@angular/forms";
+import { NgProgressModule } from "@ngx-progressbar/core";
+import { NgProgressHttpModule } from "@ngx-progressbar/http";
 
-const appRouting:Routes=[
-  {
-    path:'',component:UserInterfaceComponent
-  },
-  // {
-  //   path:'repocards',component:RepocardsComponent
-  // }
-]
+import { AppRoutingModule } from './app-routing.module';
+import { AppComponent } from './app.component';
+import { GithubComponent } from './github/github.component';
+import { SearchService } from "./git-search/search.service";
+import { UserWelcomeComponent } from './user-welcome/user-welcome.component';
+import { BgColorDirective } from './bg-color.directive';
+import { Error404Component } from './error404/error404.component';
+import { DateCountPipe } from './date-count.pipe';
+
+
 @NgModule({
   declarations: [
     AppComponent,
-    UserInterfaceComponent,
-    SearchComponent,
-  //  RepocardsComponent
+    GithubComponent,
+    UserWelcomeComponent,
+    BgColorDirective,
+    Error404Component,
+    DateCountPipe
   ],
   imports: [
     BrowserModule,
+    AppRoutingModule,
     HttpClientModule,
     FormsModule,
-    RouterModule.forRoot(appRouting)
+    NgProgressModule,
+    NgProgressHttpModule
+
   ],
-  providers: [UsersService],
+  providers: [SearchService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

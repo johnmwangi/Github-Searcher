@@ -1,20 +1,20 @@
 import { async, ComponentFixture, TestBed } from '@angular/core/testing';
 
-import { UserInterfaceComponent } from './user-interface.component';
+import { UserGithubComponent } from './user-github.component';
 
-describe('UserInterfaceComponent', () => {
-  let component: UserInterfaceComponent;
-  let fixture: ComponentFixture<UserInterfaceComponent>;
+describe('UserGithubComponent', () => {
+  let component: UserGithubComponent;
+  let fixture: ComponentFixture<UserGithubComponent>;
 
   beforeEach(async(() => {
     TestBed.configureTestingModule({
-      declarations: [ UserInterfaceComponent ]
+      declarations: [ UserGithubComponent ]
     })
     .compileComponents();
   }));
 
   beforeEach(() => {
-    fixture = TestBed.createComponent(UserInterfaceComponent);
+    fixture = TestBed.createComponent(UserGithubComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();
   });

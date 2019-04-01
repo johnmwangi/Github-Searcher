@@ -1,0 +1,46 @@
+.jumbo{
+  background-image: url("/assets/img/git.svg");
+  background-size: cover;
+  background-position: center;
+  height: 70vh;
+  background-attachment: fixed;
+  background-color: rgba(0,0,0,0.3);
+}
+.jumbotron{
+  background-color: rgba(0,0,0,0.3);
+}
+.jumbo h1{
+  color: white !important;
+  text-transform: capitalize;
+  font-weight: 400;
+}
+@media screen and (min-width:800px) {
+  .card{
+    margin: 10px;
+    margin-bottom: 60px;
+    margin-top: 50px;
+  }
+  .height{
+    height: 450px;
+
+  }
+
+}
+.card-body{
+  transition: 450ms;
+}
+.body{
+  background-color: rgba(255,0,0,0.1);
+}
+#anim{
+  height: 250px;
+  width: 250px;
+}
+.gif{
+
+  float: right;
+}
+#type{
+  color:white;
+  font-size: 20px;
+}
