@@ -4,7 +4,7 @@
 }
 
 .card-header {
-  background-color: #606060;
+  background-color: green;
   text-align: center;
   color: white;
   border: none;
@@ -23,7 +23,7 @@
 
 body {
   /* background-color: black; */
-  background-image: url('/assets/images.jpg');
+  background-image: url('http://www.gifszone.com/content/background/color_grey/color_grey_103.jpg');
 }
 
 #john {
