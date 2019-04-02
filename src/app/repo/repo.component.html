@@ -19,8 +19,8 @@
         <small>{{user1.name}}</small>
       </div>
       <div class="card-body">
-        <div class="row" *ngFor='let repo of repos, let i=index'>
-          <div class="col-md-4">
+        <div class="col" *ngFor='let repo of repos, let i=index'>
+          <div class="row-md-4">
             {{repos[i].name}}
           </div>
           <div class="col-md-4"><!--small pipe to change date format-->

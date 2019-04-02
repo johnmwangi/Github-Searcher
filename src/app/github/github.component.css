@@ -4,7 +4,7 @@
 }
 
 .card-header {
-  background-color: blue;
+  background-color: green;
   text-align: center;
   color: white;
   border: none;
@@ -15,7 +15,7 @@
 }
 
 .first {
-  background-color: #606060;
+  background-color: green;
   text-align: center;
   color: white;
   border: hidden;

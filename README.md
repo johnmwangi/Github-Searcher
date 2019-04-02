@@ -1,6 +1,6 @@
 ## Git-Searcher.
 
-## By John Mwangi.
+By John Mwangi.
 
 ## Application Release Date:
 29 March 2019.
@@ -19,19 +19,17 @@ CSS - Cascading Style Sheet. Also included bootstrap a library to css.
 Markdown Syntax.
 
 ## BDD:
-This app is therefore expected to work as follows:
-Behavior	Expectation
-landing page	Displays my github account
-Search button	Displays other users on github
-View repo button	Shows the users repo
-Installation requirements:
-Web browser
-Internet connection Offline copy available if you fork and save in your computer as a file
-Link to the app:
+
+| User input                                         | Output                                            |
+|----------------------------------------------------|---------------------------------------------------|
+| On the nav bar if the user clicks home.            | It displays where profile image can be viewed.    |
+| On click repo.                                     | The user is directed on the repos direct          |
+| If the user insert the name to search, and search. | Displays users Github profile.                    |
+| If the users clicks view on the github button.     | The user is directed to the searched github page. |
 
 
 ## Known Bugs:
-The app doesn't implement search service. The app only shows my repos Noticed any other bug? KIndly contact me on roduor41@gmail.com
+If the app doesn't implement search service. The app only shows my repos Noticed any other bug? KIndly informe on jonesmwas356@gmail.com
 
 ## Legal:
 This Application is licensed under the MIT licence. Get more info on my github account
