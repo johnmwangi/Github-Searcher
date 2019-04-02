@@ -7,7 +7,7 @@ By John Mwangi.
 
 ## Description:
 
-This is an app that allows users to search for other github users and also view their repos. Checkout:(link)
+This is an app that allows users to search for other github users and also view their repos. Checkout:(https://johnsgithub-searcher.netlify.com/)
 
 ## Languages used:
 HTML
